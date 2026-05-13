@@ -63,7 +63,7 @@
 
 - **UI**: Gradio 기반 단일 페이지 웹 인터페이스
 - **모델 / API**: HuggingFace Diffusers 기반 image-to-image 스타일 변환 모델
-- **외부 서비스**:없음
+- **외부 서비스**: 없음
 
 ---
 
