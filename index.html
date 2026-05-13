@@ -3,87 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- ⬇⬇⬇ 본인 정보로 교체 ⬇⬇⬇ -->
   <title>💎 스테인드글라스 변환기 💎 — by &lt;Kimcrystal1004&gt;</title>
   <meta name="description" content="사진을 업로드하면 스테인드글라스 스타일의 이미지를 생성" />
-  <!-- ⬆⬆⬆ 본인 정보로 교체 ⬆⬆⬆ -->
   <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
 </head>
-
 <body>
 
-  <!-- ============ HERO ============ -->
   <header class="hero">
     <div class="container">
-      <!-- ⬇⬇⬇ 본인 프로젝트로 교체 (예: "🍱 칼로리카운터") ⬇⬇⬇ -->
       <h1>💎 스테인드글라스 변환기 💎</h1>
       <p class="tagline">사진을 업로드하면 스테인드글라스 스타일의 이미지를 생성</p>
-      <!-- ⬆⬆⬆ 본인 프로젝트로 교체 ⬆⬆⬆ -->
     </div>
   </header>
 
   <main class="container">
 
-    <!-- ============ 데모 카드 ============ -->
     <section class="demo-card">
-      <!-- ⬇⬇⬇ screenshot.png 를 본인 프로젝트 화면 캡쳐로 교체 ⬇⬇⬇ -->
-      <img class="screenshot" src="screenshot.png" alt="[본인 프로젝트] 데모 화면" />
-      <!-- ⬆⬆⬆ screenshot.png 를 본인 프로젝트 화면 캡쳐로 교체 ⬆⬆⬆ -->
-
+      <img class="screenshot" src="screenshot.png" alt="[스테인드글라스 변환기] 데모 화면" />
       <div class="cta">
-        <!-- ⬇⬇⬇ 다음 주(10주차) 데모 띄운 후 href="#" 를 진짜 도메인으로 ⬇⬇⬇ -->
         <a class="btn btn-primary" href="#" aria-disabled="true" title="다음 주에 살아납니다">
           ▶ Live Demo <span class="badge">Coming Week 10</span>
         </a>
-        <!-- ⬆⬆⬆ 다음 주에 href="https://&lt;본인 ID&gt;-demo.aiweb2026.site" 로 변경 ⬆⬆⬆ -->
-
-        <!-- ⬇⬇⬇ 본인 GitHub 리포 URL 로 교체 ⬇⬇⬇ -->
-        <a
-          class="btn btn-secondary"
-          href="https://github.com/&lt;본인 GitHub username&gt;/&lt;본인 프로젝트 리포&gt;"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a class="btn btn-secondary" href="https://github.com/Kimcrystal1004/s08-aiweb2026" target="_blank" rel="noopener noreferrer">
           ⌨ Source on GitHub
         </a>
-        <!-- ⬆⬆⬆ 본인 GitHub 리포 URL 로 교체 ⬆⬆⬆ -->
       </div>
     </section>
 
-    <!-- ============ Tech Stack ============ -->
-    <section class="stack-section">
-      <h2>🛠 Tech Stack</h2>
-      <!-- ⬇⬇⬇ 본인 프로젝트가 실제로 쓴 기술로 교체 ⬇⬇⬇ -->
-      <ul class="stack">
-        <li>[기술 1]</li>
-        <li>[기술 2]</li>
-        <li>[기술 3]</li>
-        <li>Docker</li>
-        <li>Oracle Always Free</li>
-        <li>GitHub Actions</li>
-      </ul>
-      <!-- ⬆⬆⬆ 본인 프로젝트가 실제로 쓴 기술로 교체 ⬆⬆⬆ -->
+    <section class="content">
+      <zero-md src="contents.md" no-shadow></zero-md>
     </section>
 
-    <!-- ============ 어떻게 만들었나 ============ -->
-    <section class="howto">
-      <h2>🧠 어떻게 만들었나</h2>
-      <!-- ⬇⬇⬇ 본인 프로젝트 설명 3줄로 교체 ⬇⬇⬇ -->
-      <p>
-        [무엇을 만들었나 — 프로젝트의 핵심 기능 한 문장.]
-        [어떤 기술 / 모델 / API 를 써서 어떻게 동작시키는가.]
-        [사용자가 어떻게 쓰는가 — 입력은 무엇, 출력은 무엇.]
-      </p>
-      <!-- ⬆⬆⬆ 본인 프로젝트 설명 3줄로 교체 ⬆⬆⬆ -->
-    </section>
-
-    <!-- ============ Giscus 댓글 ============ -->
     <section id="comments" class="comments">
       <h2>💬 이 프로젝트 어떠세요?</h2>
       <p class="comments-note">
         GitHub 계정으로 로그인하면 댓글이 본인 리포의 GitHub Discussions에 자동 저장됩니다.
       </p>
-
       <div class="giscus"></div>
       <script
         src="https://giscus.app/client.js"
