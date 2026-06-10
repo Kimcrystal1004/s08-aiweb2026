@@ -3,58 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- ⬇⬇⬇ 본인 정보로 교체 ⬇⬇⬇ -->
-  <title>💎 스테인드글라스 변환기 💎 — by &lt;Kimcrystal1004&gt;</title>
-  <meta name="description" content="사용자 이미지를 업로드하면 선택한 톤 프리셋을 반영해 스테인드글라스 스타일의 결과 이미지를 생성하고 미리보기·다운로드까지 제공하는 서비스" />
-  <!-- ⬆⬆⬆ 본인 정보로 교체 ⬆⬆⬆ -->
+  <title>📸 사진 → 마인크래프트 스킨 변환기 — by &lt;Kimcrystal1004&gt;</title>
+  <meta name="description" content="사용자가 인물의 전신 사진을 업로드하면 Gemini 이미지 생성 API를 통해 해당 인물을 묘사한 마인크래프트 스킨(64×64 UV 맵 PNG)을 자동 생성하고, 미리보기·다운로드까지 제공하는 서비스" />
   <link rel="stylesheet" href="style.css" />
   <!-- 11주차 — contents.md inline 렌더용 -->
   <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
 </head>
 <body>
 
+
   <!-- ============ HERO ============ -->
   <header class="hero">
     <div class="container">
-      <!-- ⬇⬇⬇ 본인 프로젝트로 교체 (예: "🚀 칼로리카운터") ⬇⬇⬇ -->
-      <h1>💎 스테인드글라스 변환기 💎</h1>
-      <p class="tagline">사용자 이미지를 업로드하면 선택한 톤 프리셋을 반영해 스테인드글라스 스타일의 결과 이미지를 생성하고 미리보기·다운로드까지 제공하는 서비스</p>
-      <!-- ⬆⬆⬆ 본인 프로젝트로 교체 ⬆⬆⬆ -->
+      <h1>📸 사진 → 마인크래프트 스킨 변환기</h1>
+      <p class="tagline">사용자가 인물의 전신 사진을 업로드하면 Gemini 이미지 생성 API를 통해 해당 인물을 묘사한 마인크래프트 스킨(64×64 UV 맵 PNG)을 자동 생성하고, 미리보기·다운로드까지 제공하는 서비스</p>
     </div>
   </header>
 
+
   <main class="container">
+
 
     <!-- ============ 데모 카드 ============ -->
     <section class="demo-card">
-      <!-- ⬇⬇⬇ screenshot.png 를 본인 프로젝트 화면 캡쳐로 교체 ⬇⬇⬇ -->
-      <img class="screenshot" src="screenshot.png" alt="[본인 프로젝트] 데모 화면" />
-      <!-- ⬆⬆⬆ screenshot.png 를 본인 프로젝트 화면 캡쳐로 교체 ⬆⬆⬆ -->
+      <img class="screenshot" src="screenshot.png" alt="[사진 → 마인크래프트 스킨 변환기] 데모 화면" />
 
       <div class="cta">
-        <!-- ⬇⬇⬇ 다음 주(10주차) 데모 띄운 후 href="#" 를 진짜 도메인으로 ⬇⬇⬇ -->
+        <!-- 다음 주(10주차) 데모 띄운 후 href="#" 를 진짜 도메인으로 -->
         <!-- <a class="btn btn-primary" href="https://example-demo.aiweb2026.site">
           ▶ Live Demo
         </a> -->
         <a class="btn btn-primary" href="#" aria-disabled="true" title="다음 주에 살아납니다">
           ▶ Live Demo <span class="badge">Coming Week 10</span>
         </a>
-        <!-- ⬆⬆⬆ 다음 주에 href="https://&lt;본인 ID&gt;-demo.aiweb2026.site" 로 변경 ⬆⬆⬆ -->
 
-        <!-- ⬇⬇⬇ 본인 GitHub 리포 URL 로 교체 ⬇⬇⬇ -->
-        <a class="btn btn-secondary" href="https://github.com/&lt;본인 GitHub username&gt;/&lt;본인 프로젝트 리포&gt;" target="_blank" rel="noopener">
+        <a class="btn btn-secondary" href="https://github.com/Kimcrystal1004/<본인 프로젝트 리포>" target="_blank" rel="noopener">
           ⌨ Source on GitHub
         </a>
-        <!-- ⬆⬆⬆ 본인 GitHub 리포 URL 로 교체 ⬆⬆⬆ -->
       </div>
     </section>
 
+
     <!-- ============ 본문 (contents.md 인라인 렌더) ============ -->
     <section class="content">
-      <!-- ⬇⬇⬇ 같은 폴더의 contents.md 를 수정하면 자동 반영 ⬇⬇⬇ -->
       <zero-md src="contents.md" no-shadow></zero-md>
-      <!-- ⬆⬆⬆ 같은 폴더의 contents.md 를 수정하면 자동 반영 ⬆⬆⬆ -->
     </section>
+
 
     <!-- ============ Giscus 댓글 (8장에서 추가) ============ -->
     <section id="comments" class="comments">
@@ -63,14 +57,6 @@
         GitHub 계정으로 로그인하면 댓글이 본인 리포의 GitHub Discussions에 자동 저장됩니다.
       </p>
 
-      <!--
-        ⬇⬇⬇ 9주차 SECTION 8 에서 giscus.app 가 자동 생성한 script 코드를 여기에 붙여넣기 ⬇⬇⬇
-        교체할 속성:
-          - data-repo
-          - data-repo-id
-          - data-category-id
-        나머지 속성은 그대로 두세요.
-      -->
       <div class="giscus"></div>
       <script
         src="https://giscus.app/client.js"
@@ -88,9 +74,9 @@
         crossorigin="anonymous"
         async>
       </script>
-      <!-- ⬆⬆⬆ giscus 설정값 교체 ⬆⬆⬆ -->
     </section>
   </main>
+
 
   <footer>
     <div class="container">
