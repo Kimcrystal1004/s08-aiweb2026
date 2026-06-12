@@ -267,9 +267,84 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* ============ 네더 포탈 테마 — 데모 카드 ============ */
+.demo-card {
+  background: #000 url('netherpotal.png') center / cover;
+  border: 6px solid #0a0a0a;          /* 흑요석 프레임 */
+  border-radius: 3px;                  /* 마인크래프트 각진 스타일 */
+  box-shadow:
+    0 0 0 2px #3b0d8a,
+    0 0 22px rgba(123, 47, 247, .75),
+    0 0 55px rgba(91,  16, 212, .45),
+    0 0 100px rgba(80,   0, 180, .22);
+  animation: nether-glow 2.5s ease-in-out infinite;
+}
+
+/* 스크린샷 주변에 포탈 배경이 살짝 보이도록 */
+.demo-card .screenshot {
+  width: calc(100% - 16px);
+  margin: 10px 8px 0;
+  border-radius: 2px;
+  border-bottom: none;
+}
+
+/* 버튼 영역: 반투명 흑요석 */
+.demo-card .cta {
+  background: rgba(8, 3, 22, .80);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-top: 1.5px solid rgba(139, 92, 246, .45);
+}
+
+/* Live Demo 버튼 */
+.demo-card .btn-primary {
+  background: linear-gradient(135deg, #7c3aed, #4c1d95);
+  color: #f5f3ff;
+  border: 1.5px solid #a78bfa;
+  box-shadow: 0 0 14px rgba(124, 58, 237, .65);
+  text-shadow: 0 0 8px rgba(196, 181, 253, .55);
+}
+.demo-card .btn-primary:hover:not([aria-disabled="true"]) {
+  background: linear-gradient(135deg, #8b5cf6, #5b21b6);
+  box-shadow: 0 0 26px rgba(139, 92, 246, .95), 0 4px 14px rgba(76, 29, 149, .5);
+  transform: translateY(-2px);
+}
+
+/* Source on GitHub 버튼 */
+.demo-card .btn-secondary {
+  background: rgba(12, 5, 30, .72);
+  color: #c4b5fd;
+  border-color: rgba(124, 58, 237, .6);
+}
+.demo-card .btn-secondary:hover {
+  background: rgba(25, 10, 55, .88);
+  border-color: #a78bfa;
+  color: #ede9fe;
+  box-shadow: 0 0 14px rgba(124, 58, 237, .55);
+  transform: translateY(-2px);
+}
+
+/* 포탈 글로우 맥동 애니메이션 */
+@keyframes nether-glow {
+  0%, 100% {
+    box-shadow:
+      0 0 0 2px #3b0d8a,
+      0 0 22px rgba(123, 47, 247, .75),
+      0 0 55px rgba(91,  16, 212, .45),
+      0 0 100px rgba(80,   0, 180, .22);
+  }
+  50% {
+    box-shadow:
+      0 0 0 2px #5b1dca,
+      0 0 34px rgba(155, 77, 255, .92),
+      0 0 78px rgba(123, 47, 247, .62),
+      0 0 130px rgba(100, 20, 230, .32);
+  }
+}
+
 /* ============ 모바일 ============ */
 @media (max-width: 480px) {
-  .demo-card { margin-top: -1.5rem; border-radius: 8px; }
+  .demo-card { margin-top: -1.5rem; border-radius: 3px; }
   .cta { padding: 1rem; flex-direction: column; }
   .btn { justify-content: center; width: 100%; }
 }
