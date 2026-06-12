@@ -54,7 +54,7 @@ body {
   overflow: hidden;
   background: #4f0606;
   color: white;
-  padding: clamp(3rem, 2rem + 5vw, 6rem) 0 clamp(2.5rem, 2rem + 4vw, 5rem);
+  padding: clamp(3rem, 2rem + 5vw, 6rem) 0 0;
   text-align: center;
 }
 .enderman {
