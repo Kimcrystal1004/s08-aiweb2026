@@ -50,11 +50,23 @@ body {
   image-rendering: pixelated;
 }
 .hero {
+  position: relative;
+  overflow: hidden;
   background: #4f0606;
   color: white;
   padding: clamp(3rem, 2rem + 5vw, 6rem) 0 clamp(2.5rem, 2rem + 4vw, 5rem);
   text-align: center;
 }
+.enderman {
+  position: absolute;
+  bottom: 0;
+  height: 90%;
+  width: auto;
+  opacity: 0.85;
+  pointer-events: none;
+}
+.enderman-left  { left: 2%; }
+.enderman-right { right: 2%; transform: scaleX(-1); }
 .hero h1 {
   margin: 0 0 0.5rem;
   font-size: clamp(1.8rem, 1.2rem + 2.5vw, 3rem);
