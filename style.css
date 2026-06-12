@@ -293,12 +293,9 @@ footer a:hover {
     0 8px 32px rgba(0, 0, 0, .7);
 }
 
-/* 버튼 영역: 반투명 흑요석 */
+/* 버튼 영역: 배경 없음 */
 .demo-card .cta {
-  background: rgba(8, 3, 22, .75);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-top: 1.5px solid rgba(139, 92, 246, .45);
+  background: transparent;
   padding: 1.2rem 1.5rem 1.8rem;
 }
 
