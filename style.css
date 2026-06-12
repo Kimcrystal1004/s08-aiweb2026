@@ -54,13 +54,13 @@ body {
   overflow: hidden;
   background: #4f0606;
   color: white;
-  padding: clamp(3rem, 2rem + 5vw, 6rem) 0 3rem;
+  padding: clamp(3rem, 2rem + 5vw, 6rem) 0 6rem;
   text-align: center;
 }
 .enderman {
   position: absolute;
-  bottom: 0;
-  height: 90%;
+  bottom: 30px;
+  height: 180%;
   width: auto;
   opacity: 1;
   pointer-events: none;
