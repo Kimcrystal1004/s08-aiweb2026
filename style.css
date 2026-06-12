@@ -320,6 +320,9 @@ footer a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -3rem;
   box-shadow:
     0 0 0 2px #3b0d8a,
     0 0 22px rgba(123, 47, 247, .75),
