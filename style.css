@@ -100,7 +100,7 @@ body {
 
 /* ============ 데모 섹션 (포탈 카드 감싸는 영역) ============ */
 .demo-section {
-  background: #4f0606;
+  background: var(--bg);
   padding: 0 0 3rem;
   margin-top: -50px;
 }
