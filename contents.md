@@ -75,7 +75,7 @@ AI로 전신 사진을 나만의 마인크래프트 스킨으로 — 사진 업�
 
 ## 기술 스택
 
-- **UI**: Gradio 5.x (gr.Blocks, 커스텀 다크 테마, Ctrl+Enter 단축키)
+- **UI**: Gradio 5.x (gr.Blocks, 커스텀 다크 테마)
 - **AI 분석**: Gemini 2.5 Flash (`google-genai` SDK, Vision → JSON)
 - **스킨 합성**: Python + numpy(벡터화 HSV 재채색) + Pillow(UV 맵 픽셀 조작, 명암 템플릿)
 - **미리보기**: Pillow 2D 캐러셀 (앞/뒤/좌/우), base64 data URI 임베드
