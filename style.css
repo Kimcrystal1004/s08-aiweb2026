@@ -293,6 +293,23 @@ section p {
   min-height: 200px;
 }
 
+/* ============ 네더 바닥 타일 영역 ============ */
+.nether-floor {
+  position: relative;
+  background-color: #2a1a0a;
+  background-repeat: repeat;
+  --ink: #ffffff;
+  --muted: rgba(255, 255, 255, 0.78);
+  --border: rgba(255, 255, 255, 0.22);
+  --bg: transparent;
+  --card: rgba(0, 0, 0, 0.35);
+}
+.nether-floor main,
+.nether-floor footer {
+  position: relative;
+  z-index: 1;
+}
+
 /* ============ Footer ============ */
 footer {
   border-top: 1px solid var(--border);
