@@ -102,6 +102,7 @@ body {
 .demo-section {
   background: #4f0606;
   padding: 0 0 3rem;
+  margin-top: -50px;
 }
 
 /* ============ 데모 카드 ============ */
