@@ -54,7 +54,7 @@ body {
   overflow: hidden;
   background: #4f0606;
   color: white;
-  padding: clamp(3rem, 2rem + 5vw, 6rem) 0 0;
+  padding: clamp(3rem, 2rem + 5vw, 6rem) 0 3rem;
   text-align: center;
 }
 .enderman {
@@ -87,7 +87,7 @@ body {
   position: relative;
   width: 100%;
   height: 180px;
-  background: #4f0606 url('netherrock.png') repeat-x left bottom / 100px 100px;
+  background: var(--bg) url('netherrock.png') repeat-x left bottom / 100px 100px;
   image-rendering: pixelated;
 }
 .block-fire {
