@@ -83,10 +83,19 @@ body {
 
 /* ============ 블록 구분선 ============ */
 .block-divider {
+  position: relative;
   width: 100%;
   height: 100px;
-  background: url('netherrock.png') repeat-x left top / 100px 100px;
+  background: #4f0606 url('netherrock.png') repeat-x left top / 100px 100px;
   image-rendering: pixelated;
+}
+.block-fire {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  image-rendering: pixelated;
+  pointer-events: none;
 }
 
 /* ============ 데모 카드 ============ */
