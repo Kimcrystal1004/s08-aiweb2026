@@ -280,20 +280,26 @@ footer a:hover {
   animation: nether-glow 2.5s ease-in-out infinite;
 }
 
-/* 스크린샷 주변에 포탈 배경이 살짝 보이도록 */
+/* 스크린샷: 포탈 위에 떠있는 느낌, 주변에 포탈 배경 충분히 노출 */
 .demo-card .screenshot {
-  width: calc(100% - 16px);
-  margin: 10px 8px 0;
-  border-radius: 2px;
-  border-bottom: none;
+  display: block;
+  width: 72%;
+  margin: 2rem auto 1.2rem;
+  border-radius: 6px;
+  border: 3px solid rgba(139, 92, 246, .6);
+  box-shadow:
+    0 0 18px rgba(123, 47, 247, .7),
+    0 8px 32px rgba(0, 0, 0, .7);
+  border-bottom: 3px solid rgba(139, 92, 246, .6);
 }
 
 /* 버튼 영역: 반투명 흑요석 */
 .demo-card .cta {
-  background: rgba(8, 3, 22, .80);
+  background: rgba(8, 3, 22, .75);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-top: 1.5px solid rgba(139, 92, 246, .45);
+  padding-bottom: 1.8rem;
 }
 
 /* Live Demo 버튼 */
