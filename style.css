@@ -50,7 +50,7 @@ body {
   image-rendering: pixelated;
 }
 .hero {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
+  background: #2e0707;
   color: white;
   padding: clamp(3rem, 2rem + 5vw, 6rem) 0 clamp(2.5rem, 2rem + 4vw, 5rem);
   text-align: center;
