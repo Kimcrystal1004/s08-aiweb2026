@@ -103,10 +103,6 @@ body {
 /* ============ 헤더 아래 전체 배경 ============ */
 .site-body {
   background-color: #4f0606;
-  background-image: url('background.png');
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 /* ============ 데모 섹션 (포탈 카드 감싸는 영역) ============ */
@@ -305,7 +301,11 @@ section p {
 /* ============ 네더 바닥 영역 ============ */
 .nether-floor {
   position: relative;
-  background: transparent;
+  background-color: #4f0606;
+  background-image: url('background1.png'), url('background2.png');
+  background-size: auto, auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center 2048px;
   --ink: #ffffff;
   --muted: rgba(255, 255, 255, 0.78);
   --border: rgba(255, 255, 255, 0.22);
