@@ -10,7 +10,6 @@
 </head>
 <body>
 
-
   <!-- ============ HERO ============ -->
   <header class="hero">
     <div class="container">
@@ -19,100 +18,81 @@
     </div>
   </header>
 
-  <!-- ============ 데모 카드 (포탈) ============ -->
-  <div class="demo-section">
-    <div class="container">
-      <section class="demo-card">
-        <img class="screenshot" src="screenshot.png" alt="[사진 → 마인크래프트 스킨 변환기] 데모 화면" />
-        <div class="cta">
-          <a class="btn btn-primary" href="https://s08-demo.aiweb2026.site" target="_blank" rel="noopener">
-            ▶ Live Demo
-          </a>
-          <a class="btn btn-secondary" href="https://github.com/Kimcrystal1004/skinforge" target="_blank" rel="noopener">
-            ⌨ Source on GitHub
-          </a>
-        </div>
-      </section>
-    </div>
-  </div>
+  <!-- ============ 헤더 아래 전체 배경 영역 ============ -->
+  <div class="site-body">
 
-  <!-- 네더렉 + 불 + 엔더맨 -->
-  <div class="block-divider">
-    <img src="fire.png" alt="" class="block-fire" style="left:12%">
-    <img src="fire.png" alt="" class="block-fire" style="left:43%">
-    <img src="fire.png" alt="" class="block-fire" style="left:71%">
-    <img src="enderman.png" alt="enderman" class="enderman enderman-left">
-    <img src="enderman.png" alt="enderman" class="enderman enderman-right">
-  </div>
-
-  <!-- ============ 네더 바닥 타일 배경 영역 ============ -->
-  <div class="nether-floor">
-    <main class="container">
-
-      <!-- ============ 본문 (contents.md 인라인 렌더) ============ -->
-      <section class="content">
-        <zero-md src="contents.md" no-shadow></zero-md>
-      </section>
-
-
-      <!-- ============ Giscus 댓글 ============ -->
-      <section id="comments" class="comments">
-        <h2>💬 이 프로젝트 어떠세요?</h2>
-        <p class="comments-note">
-          GitHub 계정으로 로그인하면 댓글이 본인 리포의 GitHub Discussions에 자동 저장됩니다.
-        </p>
-        <div class="giscus"></div>
-        <script
-          src="https://giscus.app/client.js"
-          data-repo="Kimcrystal1004/s08-aiweb2026"
-          data-repo-id="R_kgDOSPyzaQ"
-          data-category="Announcements"
-          data-category-id="DIC_kwDOSPyzac4C79iR"
-          data-mapping="pathname"
-          data-strict="0"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-input-position="bottom"
-          data-theme="preferred_color_scheme"
-          data-lang="ko"
-          crossorigin="anonymous"
-          async>
-        </script>
-      </section>
-    </main>
-
-    <footer>
+    <!-- ============ 데모 카드 (포탈) ============ -->
+    <div class="demo-section">
       <div class="container">
-        <p>
-          2026 AI 웹 융합 · 9주차 데모 소개 페이지 ·
-          <a href="https://aiweb2026.site">aiweb2026.site</a>
-        </p>
+        <section class="demo-card">
+          <img class="screenshot" src="screenshot.png" alt="[사진 → 마인크래프트 스킨 변환기] 데모 화면" />
+          <div class="cta">
+            <a class="btn btn-primary" href="https://s08-demo.aiweb2026.site" target="_blank" rel="noopener">
+              ▶ Live Demo
+            </a>
+            <a class="btn btn-secondary" href="https://github.com/Kimcrystal1004/skinforge" target="_blank" rel="noopener">
+              ⌨ Source on GitHub
+            </a>
+          </div>
+        </section>
       </div>
-    </footer>
-  </div>
+    </div>
 
-  <script>
-    (function () {
-      var T = 100, N = 10;
-      var canvas = document.createElement('canvas');
-      canvas.width = canvas.height = T * N;
-      var ctx = canvas.getContext('2d');
-      var nr = new Image(), ni = new Image(), done = 0;
-      function draw() {
-        if (++done < 2) return;
-        for (var r = 0; r < N; r++)
-          for (var c = 0; c < N; c++)
-            ctx.drawImage(Math.random() < 0.05 ? ni : nr, c * T, r * T, T, T);
-        var el = document.querySelector('.nether-floor');
-        if (el) {
-          el.style.backgroundImage = 'url(' + canvas.toDataURL() + ')';
-          el.style.backgroundSize = (T * N) + 'px ' + (T * N) + 'px';
-        }
-      }
-      nr.onload = ni.onload = draw;
-      nr.src = 'netherrock.png';
-      ni.src = 'netherite.png';
-    })();
-  </script>
+    <!-- 네더렉 + 불 + 엔더맨 -->
+    <div class="block-divider">
+      <img src="fire.png" alt="" class="block-fire" style="left:12%">
+      <img src="fire.png" alt="" class="block-fire" style="left:43%">
+      <img src="fire.png" alt="" class="block-fire" style="left:71%">
+      <img src="enderman.png" alt="enderman" class="enderman enderman-left">
+      <img src="enderman.png" alt="enderman" class="enderman enderman-right">
+    </div>
+
+    <!-- ============ 본문 + 푸터 ============ -->
+    <div class="nether-floor">
+      <main class="container">
+
+        <!-- ============ 본문 (contents.md 인라인 렌더) ============ -->
+        <section class="content">
+          <zero-md src="contents.md" no-shadow></zero-md>
+        </section>
+
+        <!-- ============ Giscus 댓글 ============ -->
+        <section id="comments" class="comments">
+          <h2>💬 이 프로젝트 어떠세요?</h2>
+          <p class="comments-note">
+            GitHub 계정으로 로그인하면 댓글이 본인 리포의 GitHub Discussions에 자동 저장됩니다.
+          </p>
+          <div class="giscus"></div>
+          <script
+            src="https://giscus.app/client.js"
+            data-repo="Kimcrystal1004/s08-aiweb2026"
+            data-repo-id="R_kgDOSPyzaQ"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOSPyzac4C79iR"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="ko"
+            crossorigin="anonymous"
+            async>
+          </script>
+        </section>
+      </main>
+
+      <footer>
+        <div class="container">
+          <p>
+            2026 AI 웹 융합 · 9주차 데모 소개 페이지 ·
+            <a href="https://aiweb2026.site">aiweb2026.site</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+  </div><!-- /.site-body -->
+
 </body>
 </html>
