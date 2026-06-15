@@ -1,7 +1,7 @@
 <style>
 .mc-card { background: rgba(28,26,24,0.80); margin: 2.2rem 0; overflow: hidden; }
 .mc-card-h { background: rgba(0,0,0,0.28); border-bottom: 1px solid rgba(255,255,255,0.07); padding: 8px 14px; color: #b8b8b8; font-family: 'Courier New', monospace; font-size: 0.74rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
-.mc-card-b { padding: 14px 16px; color: #b8b8b8; font-size: 0.92rem; line-height: 1.70; }
+.mc-card-b { padding: 14px 16px; color: #b8b8b8; font-size: 0.92rem; line-height: 1.70; background: rgba(58,55,50,0.72); }
 .mc-card-b b { color: #eee; }
 
 .mc-rows { display: flex; flex-direction: column; gap: 5px; }
