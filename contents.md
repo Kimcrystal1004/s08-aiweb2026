@@ -23,7 +23,7 @@
 .mc-chk-row:last-child { border-bottom: none; }
 .mc-chk { color: #10b981; font-weight: 700; flex-shrink: 0; }
 
-.mc-tip { background: #1e1600; border-left: 3px solid #f9a825; color: #f9a825; padding: 10px 13px; font-size: 0.84rem; line-height: 1.55; margin-top: 5px; }
+.mc-tip { background: #1e1600; border-left: 3px solid #f9a825; color: #f9a825; padding: 10px 13px; font-size: 0.84rem; line-height: 1.55; }
 
 .mc-adv { background: rgba(14,12,8,0.90); padding: 1rem 1.3rem 1.3rem; overflow-x: auto; }
 .mc-adv-hd { color: #d0ccc0; font-family: 'Courier New', monospace; font-size: 0.72rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; border-bottom: 1px solid #302a10; padding-bottom: 0.5rem; margin-bottom: 1rem; }
@@ -95,9 +95,8 @@
 
 <div class="mc-card">
 <div class="mc-card-h">📦 데이터 출처</div>
-<div class="mc-card-b">레퍼런스 베이스 스킨 및 명암 템플릿은 <b>본인 직접 제작</b>. 인물 사진은 사용자가 직접 업로드하며 서버에 영구 저장하지 않습니다.
+<div class="mc-card-b">레퍼런스 베이스 스킨 및 명암 템플릿은 <b>본인 직접 제작</b>. 인물 사진은 사용자가 직접 업로드하며 서버에 영구 저장하지 않습니다.</div>
 <div class="mc-tip">💡 업로드 사진은 Gemini API 호출 후 메모리에서 즉시 해제됩니다.</div>
-</div>
 </div>
 
 <div class="mc-card">
@@ -119,6 +118,6 @@
 <div class="mc-chk-row"><span class="mc-chk">✔</span> 데이터 출처 적격 (저작권·개인정보 OK)</div>
 <div class="mc-chk-row"><span class="mc-chk">✔</span> 완료 조건 한 줄로 명확</div>
 </div>
-<div class="mc-tip" style="margin:0;">💡 TIP: 단색 배경, 정면 포즈 사진이 가장 정확한 스킨을 만들어냅니다.</div>
 </div>
+<div class="mc-tip">💡 TIP: 단색 배경, 정면 포즈 사진이 가장 정확한 스킨을 만들어냅니다.</div>
 </div>
