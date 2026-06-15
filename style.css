@@ -289,9 +289,13 @@ section p {
 }
 
 /* ============ Comments ============ */
+.comments h2 {
+  color: #fff;
+}
 .comments .comments-note {
   font-size: 0.9rem;
   margin: 0 0 1.5rem;
+  color: rgba(255,255,255,0.75);
 }
 .giscus, .giscus-frame {
   width: 100%;
