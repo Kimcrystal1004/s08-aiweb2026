@@ -306,10 +306,10 @@ section p {
 .nether-floor {
   position: relative;
   background-color: #4f0606;
-  background-image: url('background1.png'), url('background2.png'), url('background3.png');
-  background-size: auto, auto, auto;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: center top, center 88px, center 2136px;
+  background-image: url('background2.png'), url('background3.png');
+  background-size: auto, auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center 2048px;
   --ink: #ffffff;
   --muted: rgba(255, 255, 255, 0.78);
   --border: rgba(255, 255, 255, 0.22);
