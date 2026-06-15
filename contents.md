@@ -27,7 +27,7 @@
 
 .mc-adv { background: rgba(14,12,8,0.90); padding: 1rem 1.3rem 1.3rem; overflow-x: auto; }
 .mc-adv-hd { color: #d0ccc0; font-family: 'Courier New', monospace; font-size: 0.72rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; border-bottom: 1px solid #302a10; padding-bottom: 0.5rem; margin-bottom: 1rem; }
-.mc-chain { display: flex; align-items: center; min-width: max-content; }
+.mc-chain { display: flex; align-items: center; width: fit-content; margin: 0 auto; }
 .mc-node { display: flex; flex-direction: column; align-items: center; gap: 5px; position: relative; }
 .mc-box2 { width: 52px; height: 52px; background: #100e08; border: 2px solid #c8a42a; box-shadow: 0 0 0 1px #5a4008, inset 0 0 10px rgba(0,0,0,0.85); border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; cursor: default; transition: border-color 0.15s, box-shadow 0.15s; }
 .mc-node:hover .mc-box2 { border-color: #ffe566; box-shadow: 0 0 12px rgba(200,164,42,0.6), 0 0 0 1px #5a4008, inset 0 0 8px rgba(0,0,0,0.7); }
